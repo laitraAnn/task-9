@@ -10,7 +10,7 @@ fun main() {
     val input = readLine() ?: return
 
     val nums = input.split(",").mapNotNull { it.trim().toIntOrNull() }.toIntArray()
-
+    val startTime = System.nanoTime()
     if (nums.distinct().size != nums.size || nums.any { it < 0 || it > nums.size }) {
         println("Ошибка: все числа должны быть уникальными и находиться в диапазоне [0, n].")
         return
