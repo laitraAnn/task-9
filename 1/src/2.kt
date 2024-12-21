@@ -24,7 +24,7 @@ fun main() {
     val duration1 = endTime1 - startTime1
 
     println("Результат: ${result.joinToString(", ")}")
-    println("Время выполнения для первой пары: ${duration1} миллисекунд")
+    println("Время выполнения: ${duration1} миллисекунд")
 
     val nums3 = intArrayOf(4, 9, 5)
     val nums4 = intArrayOf(9, 4, 9, 8, 4)
@@ -35,5 +35,5 @@ fun main() {
     val duration2 = endTime2 - startTime2
 
     println("Результат: ${result2.joinToString(", ")}")
-    println("Время выполнения для второй пары: ${duration2} миллисекунд")
+    println("Время выполнения: ${duration2} миллисекунд")
 }
