@@ -15,7 +15,8 @@ fun main() {
         println("Ошибка: все числа должны быть уникальными и находиться в диапазоне [0, n].")
         return
     }
-
+    val elapsedTime = System.nanoTime() - startTime
+    println("Времени затрачено: ${elapsedTime / 1000000.0} мс")
     val missing = missingNumber(nums)
     println("Отсутствующее число: $missing")
 }
